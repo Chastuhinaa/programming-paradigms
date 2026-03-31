@@ -45,13 +45,13 @@ main = do
     
     
     case length wordsN == 1 && isValidNumber (head wordsN) of
-        False -> putStrLn "\n❌ Помилка: N має бути одним цілим числом!"
+        False -> putStrLn "\n Помилка: N має бути одним цілим числом!"
         True  -> do
             let n = read (head wordsN) :: Int
             
             
             case n > 0 of
-                False -> putStrLn "\n❌ Помилка: Кількість підсписків має бути більшою за 0!"
+                False -> putStrLn "\n Помилка: Кількість підсписків має бути більшою за 0!"
                 True  -> do
                    
                     putStrLn "Введіть список чисел через пробіл (наприклад: 1 2 3 4 5 6 7):"
@@ -60,7 +60,7 @@ main = do
                     
                     
                     case allValid stringList of
-                        False -> putStrLn "\n❌ Помилка: Ми не працюємо з такими типами даних! Вводьте лише цілі числа."
+                        False -> putStrLn "\n Помилка: Ми не працюємо з такими типами даних! Вводьте лише цілі числа."
                         True  -> do
                             let intList = map read stringList :: [Int]
                             

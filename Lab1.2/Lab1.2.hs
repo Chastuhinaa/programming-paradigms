@@ -1,4 +1,5 @@
 --2. Знайти максимальний елемент та переставити всі його примірники в початок списку.
+{- HLINT ignore "Use if" -}
 module Main where
 import System.IO
 

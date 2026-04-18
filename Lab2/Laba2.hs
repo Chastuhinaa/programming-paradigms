@@ -1,4 +1,5 @@
 --7. Розбити заданий список на N підсписків, записуючи в ці підсписки елементи по черзі.
+{- HLINT ignore "Use if" -}
 module Main where
 import System.IO
 
